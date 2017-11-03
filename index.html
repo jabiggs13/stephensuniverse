@@ -23,7 +23,7 @@
 <script>
 L.mapbox.accessToken = 'pk.eyJ1IjoiamFiaWdnczEzIiwiYSI6ImNpdTl0enV1YTAwMDEydG1wZ3YzNDF1ZWEifQ.qwYjWrKbWIewPCKcqQc6sw';
 var mapPopupsJS = L.mapbox.map('map-popups-js', 'mapbox.dark')
-  .setView([37.8, -96], 5);
+  .setView([37.8, -96], 4);
 var myLayer = L.mapbox.featureLayer().addTo(mapPopupsJS);
 
 var geojson = [
@@ -34,13 +34,13 @@ var geojson = [
       coordinates: [-77.031952, 38.913184]
     },
     properties: {
-      title: 'Mapbox DC',
+      title: 'CARRIE',
       description: '1714 14th St NW, Washington DC',
-      image: 'https://farm9.staticflickr.com/8604/15769066303_3e4dcce464_n.jpg',
+      image: 'img/carrie.jpg',
       icon: {
-        iconUrl: 'https://www.mapbox.com/mapbox.js/assets/images/astronaut1.png',
-        iconSize: [50, 50], // size of the icon
-        iconAnchor: [25, 25], // point of the icon which will correspond to marker's location
+        iconUrl: 'icon/carrie.svg',
+        iconSize: [100, 100], // size of the icon
+        //iconAnchor: [25, 25], // point of the icon which will correspond to marker's location
         popupAnchor: [0, -25], // point from which the popup should open relative to the iconAnchor
         className: 'dot'
       }
@@ -53,13 +53,13 @@ var geojson = [
       coordinates: [-122.413682, 37.775408]
     },
     properties: {
-      title: 'CARRIE',
-      description: 'Carrie is Stephen King’s first published novel, released in 1974. Carrie recounts the story of Carrie White, a bullied young women who discovers she has psychic abilities. When Carrie is the target of a cruel prank at her high school prom, her telekinetic fury decimates her classmates as she takes revenge on the people who tormented her.',
-      image: 'img/carrie.jpg',
+      title: 'Mapbox SF',
+      description: '155 9th St, San Francisco',
+      image: 'https://farm9.staticflickr.com/8571/15844010757_63b093d527_n.jpg',
       icon: {
-        iconUrl: 'icon/carrie.svg',
-        iconSize: [100, 100], // size of the icon
-        //iconAnchor: [25, 25], // point of the icon which will correspond to marker's location
+        iconUrl: 'https://www.mapbox.com/mapbox.js/assets/images/astronaut2.png',
+        iconSize: [50, 50], // size of the icon
+        iconAnchor: [25, 25], // point of the icon which will correspond to marker's location
         popupAnchor: [0, -25], // point from which the popup should open relative to the iconAnchor
         className: 'dot'
       }
